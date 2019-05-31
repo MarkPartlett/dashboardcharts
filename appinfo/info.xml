@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>dashboardcharts</id>
+    <name>Dashboard Charts</name>
+    <summary>Dashboard Gaphs/Gauges/Reports.</summary>
+    <description><![CDATA[Flexible Dashboard widgets for NextCloud Dashboard. Dashboard Gaphs/Gauges/Reports.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="mark@partlett.net" >Mark Partlett</author>
+    <namespace>DashboardCharts</namespace>
+    <category>organization</category>
+    <bugs>https://github.com/nextcloud/dashboardcharts/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="15" max-version="15"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Dashboard Charts</name>
+            <route>dashboardcharts.page.index</route>
+        </navigation>
+    </navigations>
+</info>

@@ -1,0 +1,15 @@
+{
+    "name": "Dashboard Charts",
+    "description": "Dashboard Gaphs/Gauges/Reports.",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Mark Partlett"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}
