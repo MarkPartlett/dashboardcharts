@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+	<name>*dbname*</name>
+	<create>true</create>
+	<overwrite>false</overwrite>
+
+	<table>
+		<name>*dbprefix*dashboard_data</name>
+		<declaration>
+			<field>
+				<name>user_id</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>255</length>
+			</field>
+			<field>
+				<name>widget</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>255</length>
+			</field>
+			<field>
+				<name>data</name>
+				<type>text</type>
+				<notnull>false</notnull>
+				<length>10240</length>
+			</field>
+			<index>
+				<name>unique_setting</name>
+				<primary>true</primary>
+				<unique>true</unique>
+				<field>
+					<name>user_id</name>
+				</field>
+				<field>
+					<name>widget</name>
+				</field>
+			</index>
+		</declaration>
+	</table>
+
+</database>
