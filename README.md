@@ -8,9 +8,8 @@ Installation
 
 Download the DashboardCharts Codebase
 
-$ cd /var/www/html/nextcloud/apps
-
-$ git clone https://github.com/MarkPartlett/dashboardcharts.git
+	$ cd /var/www/html/nextcloud/apps
+	$ git clone https://github.com/MarkPartlett/dashboardcharts.git
 
 Note: This will be moved to https://github.com/nextcloud/dashboardcharts.git once the app has been accepted to the NextCloud app store
  
@@ -25,6 +24,6 @@ Enable the App
 	* Selecting Load Demo Data within settings will establish a new user
 	
  
- * @author Mark Partlett <mark@partlettconsulting.com.au>
- * @copyright 2019, Mark Partlett <mark@partlettconsulting.com.au>
+ 	* @author Mark Partlett <mark@partlettconsulting.com.au>
+ 	* @copyright 2019, Mark Partlett <mark@partlettconsulting.com.au>
 
