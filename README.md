@@ -5,9 +5,11 @@ by Mark Partlett, Partlett Consulting.
 Alpha version only 
 
 Installation
+
 Download the DashboardCharts Codebase
 
 $ cd /var/www/html/nextcloud/apps
+
 $ git clone https://github.com/MarkPartlett/dashboardcharts.git
 
 Note: This will be moved to https://github.com/nextcloud/dashboardcharts.git once the app has been accepted to the NextCloud app store
