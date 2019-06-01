@@ -50,8 +50,6 @@ $(document).ready(function() {
 		returnMsg = returnMsg.substring(0, returnMsg.length - 3);
 		returnMsg += "}]";
 		
-	//	returnMsg = JSON.parse(returnMsg);
-	//	returnMsg = JSON.stringify(returnMsg);
 		returnMsg = 'dashboard=' + returnMsg;
 	//	console.log(returnMsg);
 		
@@ -93,9 +91,71 @@ $(document).ready(function() {
 	//	});
 
 		cachebuster += 1;
-		OCP.AppConfig.setValue('dashboard', 'cachebuster', cachebuster);
+		OCP.AppConfig.setValue('dashboardcharts', 'cachebuster', cachebuster);
 	});
 
+	
+	$('#dashboard-load').on('click', function(event) {
+		event.preventDefault();
+
+		var selector = '#dashboard-message',
+			snippetValue = $textarea.val(),
+			urlValue = $urlInput.val();
+		$section.find('textarea').each(function(){
+		$(this).prop('disabled', true);
+		});
+		OC.msg.startSaving(selector);
+		
+		var returnMsg = '[{';
+		$section.find('textarea').each(function(){
+		returnMsg += "\"widget\":\""+ $(this).attr('id')+"\",\"data\":"+$(this).attr('value')+"},{";
+			});
+		returnMsg = returnMsg.substring(0, returnMsg.length - 3);
+		returnMsg += "}]";
+		
+		returnMsg = 'dashboard=' + returnMsg;
+	//	console.log(returnMsg);
+		
+	//	function saveSettings() {
+	//	OC.msg.startSaving('#activity_notifications_msg');
+	//	var post = $(returnMsg).serialize();
+		var post = returnMsg;
+
+		$.post(OC.generateUrl('/apps/dashboardcharts/settings'), post, function(response) {
+			OC.msg.finishedSuccess('#activity_notifications_msg', response.set);
+		});
+	//}
+			
+		$section.find('textarea').each(function(){
+		$(this).prop('disabled', false);
+		});	
+		
+
+	//	OCP.AppConfig.setValue('dashboard', 'snippet', snippetValue, {
+	//		success: function(){
+	//			$textarea.prop('disabled', false);
+
+	//			OCP.AppConfig.setValue('dashboard', 'widget', urlValue, {
+	//				success: function(){
+	//					$urlInput.prop('disabled', false);
+	//					OC.msg.finishedSuccess(selector, t('settings', 'Saved'));
+	//				},
+	//				error: function(){
+	//					$urlInput.prop('disabled', false);
+	//					OC.msg.finishedError(selector, t('dashboard', 'Error while saving'));
+	//				}
+	//			});
+	//		},
+	//		error: function(){
+	//			$textarea.prop('disabled', false);
+	//			$urlInput.prop('disabled', false);
+	//			OC.msg.finishedError(selector, t('dashboard', 'Error while saving'));
+	//		}
+	//	});
+
+		cachebuster += 1;
+		OCP.AppConfig.setValue('dashboardcharts', 'cachebuster', cachebuster);
+	});
 	/**
 	 * try to detect an URL from the snippet input
 	 */

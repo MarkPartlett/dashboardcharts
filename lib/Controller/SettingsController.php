@@ -24,7 +24,7 @@
  *
  */
 
-namespace OCA\Dashboard\Controller;
+namespace OCA\DashboardCharts\Controller;
 
 use \OCP\IConfig;
 use \OCP\IRequest;
@@ -32,7 +32,7 @@ use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
-use OCA\Dashboard\Db\DataRequest;
+use OCA\DashboardCharts\Db\DataRequest;
 
 class SettingsController extends Controller {
 

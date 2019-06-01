@@ -29,14 +29,10 @@
 namespace OCA\Dashboardcharts\AppInfo;
 
 use \OCP\IContainer;
-use OCA\Dashboardcharts\Service\EventsService;
-use OCA\Dashboardcharts\Service\WidgetsService;
 use OCP\AppFramework\App;
 use OCP\AppFramework\IAppContainer;
 use OCP\AppFramework\QueryException;
-use OCP\Dashboard\IDashboardManager;
-use OCP\Dashboard\Service\IEventsService;
-use OCP\Dashboard\Service\IWidgetsService;
+
 
 class Application extends App {
 
@@ -60,44 +56,7 @@ class Application extends App {
 	public function registerServices() {
 		$container = $this->getContainer();
 		/** @var IDashboardManager $dashboardManager */
-		$dashboardManager = $this->container->query(IDashboardManager::class);
-
-		/** @var IWidgetsService $widgetsService */
-		$widgetsService = $this->container->query(WidgetsService::class);
-		/** @var IEventsService $eventsService */
-		$eventsService = $this->container->query(EventsService::class);
-
-		$dashboardManager->registerWidgetsService($widgetsService);
-		$dashboardManager->registerEventsService($eventsService);
 		$container->registerAlias('Settings', Settings::class);
-	}
-
-
-	/**
-	 * Register Navigation Tab
-	 */
-	public function registerNavigation() {
-		$this->container->getServer()
-						->getNavigationManager()
-						->add($this->dashboardNavigation());
-	}
-
-
-	/**
-	 * @return array
-	 */
-	private function dashboardNavigation(): array {
-		$urlGen = \OC::$server->getURLGenerator();
-		$navName = \OC::$server->getL10N(self::APP_NAME)
-							   ->t('Dashboard');
-
-		return [
-			'id'    => self::APP_NAME,
-			'order' => -1,
-			'href'  => $urlGen->linkToRoute('dashboard.Navigation.navigate'),
-			'icon'  => $urlGen->imagePath(self::APP_NAME, 'dashboard.svg'),
-			'name'  => $navName
-		];
 	}
 
 }

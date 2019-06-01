@@ -27,8 +27,8 @@
 /** @var array $_ */
 /** @var \OCP\IL10N $l */
 
-script('dashboard', 'personal');
-style('dashboard', 'personal');
+script('dashboardcharts', 'personal');
+style('dashboardcharts', 'personal');
 
 ?>
 
