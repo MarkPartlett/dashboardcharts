@@ -60,7 +60,7 @@ $(document).ready(function() {
 	//	var post = $(returnMsg).serialize();
 		var post = returnMsg;
 
-		$.post(OC.generateUrl('/apps/dashboard/settings'), post, function(response) {
+		$.post(OC.generateUrl('/apps/dashboardcharts/settings'), post, function(response) {
 			OC.msg.finishedSuccess('#activity_notifications_msg', response.set);
 		});
 	//}

@@ -40,7 +40,7 @@ use OCP\Dashboard\Service\IWidgetsService;
 
 class Application extends App {
 
-	const APP_NAME = 'dashboard';
+	const APP_NAME = 'dashboardcharts';
 
 	/** @var IAppContainer */
 	private $container;

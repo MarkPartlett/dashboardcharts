@@ -52,7 +52,7 @@ class Section implements IIconSection {
 	 * @returns string
 	 */
 	public function getID() {
-		return 'dashboard';
+		return 'dashboardcharts';
 	}
 
 	/**
@@ -62,7 +62,7 @@ class Section implements IIconSection {
 	 * @return string
 	 */
 	public function getName() {
-		return $this->l->t('Dashboard');
+		return $this->l->t('Dashboard Charts');
 	}
 
 	/**

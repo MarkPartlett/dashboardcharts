@@ -68,7 +68,7 @@ class Personal implements ISettings {
 		$userId = $this->userId;
 		$parameters = [	
 			'widgets'     => $this->dataRequest->getWidgets($userId),
-			'cachebuster' => $this->config->getAppValue('dashboard', 'cachebuster', '0'),
+			'cachebuster' => $this->config->getAppValue('dashboardcharts', 'cachebuster', '0'),
 		];
 
 		return new TemplateResponse('dashboardcharts', 'settings-personal', $parameters, '');
@@ -78,7 +78,7 @@ class Personal implements ISettings {
 	 * @return string the section ID, e.g. 'sharing'
 	 */
 	public function getSection() {
-		return 'dashboard';
+		return 'dashboardcharts';
 	}
 
 	/**
