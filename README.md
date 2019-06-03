@@ -31,8 +31,8 @@ Enable the App
 	* Click on the user icon in the top right of the screen, and select Apps from the drop down menu
 	* Find the Dashboard Charts app in the list and click enable
 	* Additional Widgets will be avaliable within the dashboard app and configuration within settings.
-	* Selecting Load Demo Data within settings will establish a new user
-	
+
+Selecting Load Demo Data within settings will establish a new user
 
 	
  
