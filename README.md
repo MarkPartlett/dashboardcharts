@@ -4,7 +4,15 @@ by Mark Partlett, Partlett Consulting.
 
 https://youtu.be/3TzOXOcAV2I
 
-Alpha version only 
+Alpha version only  
+
+Here are links to a few of the popular libraries:
+
+    Highcharts - http://www.highcharts.com/
+    Chart.js - http://www.chartjs.org/
+    Gauge.js - https://github.com/bernii/gauge.js/
+	DataTables - https://datatables.net/
+	
 
 Installation
 
@@ -24,6 +32,8 @@ Enable the App
 	* Find the Dashboard Charts app in the list and click enable
 	* Additional Widgets will be avaliable within the dashboard app and configuration within settings.
 	* Selecting Load Demo Data within settings will establish a new user
+	
+
 	
  
  	* @author Mark Partlett <mark@partlettconsulting.com.au>
