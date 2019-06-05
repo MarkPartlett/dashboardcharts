@@ -70,6 +70,24 @@ class SettingsController extends Controller {
 		
 		return new JSONResponse(array("set" => true));
 	}
+	
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function personal2 ($dashboard,$userId) {
+
+		
+		$dashboard_json= json_decode($dashboard,true);
+		foreach ($dashboard_json as $widget =>$value) {
+	//	$userId = $this->userId;
+		$widgetId = trim(json_encode(($value)['widget']),'"');
+		$settings = json_encode(($value)['data']);
+		$this->dataRequest->create($widgetId,  $userId,  $settings);
+		}
+		
+		return new JSONResponse(array("set" => true));
+	}
 		
 };
 ?>
