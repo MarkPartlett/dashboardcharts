@@ -36,6 +36,7 @@ use OCP\AppFramework\QueryException;
 use OCP\Dashboard\IDashboardWidget;
 use OCP\Dashboard\Model\IWidgetRequest;
 use OCP\Dashboard\Model\IWidgetConfig;
+use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\IL10N;
 
 
@@ -90,9 +91,8 @@ class iFRAME1Widget implements IDashboardWidget {
         //         ->addJs('widgets/counter.min')
 				 ->setIcon('icon-chart')
 				 ->setContent('widgets/iFRAME1')
-                 ->setInitFunction('OCA.DashBoard.iframe1.init');	
-
-
+                 ->setInitFunction('OCA.DashBoard.iframe1.init')
+				 ->setSettings(['name','title','checkbox',true,'placeholder'],['name2','title2','checkbox2',true,'placeholder2']);      	 
 		return $template;
 	}
 
@@ -109,6 +109,8 @@ class iFRAME1Widget implements IDashboardWidget {
 		$setup->addMenuEntry('OCA.DashBoard.iframe1.getiFRAME1Data', 'icon-chart', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.iframe1.getiFRAME1Data', 300);
 		$setup->setPush('OCA.DashBoard.iframe1.push');
+
+		
 
 		return $setup;
 	}

@@ -9,7 +9,6 @@
  */
 return [
     'routes' => [
-	   ['name' => 'Settings#personal', 'url' => '/settings', 'verb' => 'POST'],
-	   ['name' => 'Settings#personal2', 'url' => '/api', 'verb' =>'POST']
+	   ['name' => 'Settings#personal', 'url' => '/settings', 'verb' => 'POST']
     ]
 ];

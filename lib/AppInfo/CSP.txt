@@ -1,0 +1,10 @@
+		$response = new TemplateResponse(Application::APP_NAME, 'navigate', []);
+	        $csp = new ContentSecurityPolicy();
+        $csp->addAllowedImageDomain('*')
+            ->addAllowedMediaDomain('*')
+			->addAllowedScriptDomain('*')
+			->addAllowedChildSrcDomain('*')
+			->addAllowedFrameDomain('*')
+			->allowInlineScript(true);
+        $response->setContentSecurityPolicy($csp);
+		return $response;

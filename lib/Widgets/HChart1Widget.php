@@ -90,6 +90,7 @@ class HChart1Widget implements IDashboardWidget {
                  ->addJs('widgets/highcharts')
 				 ->addJs('widgets/highcharts-more')
 				 ->addJs('widgets/highcharts-3d')
+				 ->addJs('widgets/data')
 				 ->addJs('widgets/exporting')
 				 ->setIcon('icon-chart')
 				 ->setContent('widgets/HChart1')

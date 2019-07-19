@@ -41,10 +41,14 @@
 
 			init: function () {
 				
+				   
+         
+      
+       var editor = highed.Editor("app-content");
+  
 				
-				
-					   info1.divInfo1 = $('#widget-info1');
-					   info1.getInfo1Data();
+			//		   info1.divInfo1 = $('#widget-info1');
+			//		   info1.getInfo1Data();
 					      },
 
   			getInfo1Data: function () {

@@ -27,7 +27,7 @@
 ?>
 
 <div class="widget-hchart2" id="widget-hchart2">
-<canvas id="line-hchart2" width="100%"></canvas>
+<canvas id="line-hchart2" height="100%" width="100%"></canvas>
 </div>
 <div class="widget-hchart2b" id="widget-hchart2b">
 

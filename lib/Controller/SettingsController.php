@@ -24,6 +24,7 @@
  *
  */
 
+
 namespace OCA\DashboardCharts\Controller;
 
 use \OCP\IConfig;
@@ -33,6 +34,8 @@ use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
 use OCA\DashboardCharts\Db\DataRequest;
+
+
 
 class SettingsController extends Controller {
 
@@ -51,6 +54,7 @@ class SettingsController extends Controller {
 		$this->userId = $userId;
 		$this->config = $config;
 		$this->dataRequest = $dataRequest;
+		
 	}
 
 	/**

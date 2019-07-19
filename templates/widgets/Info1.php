@@ -27,6 +27,8 @@
 ?>
 
 <div class="widget-info1" id="widget-info1">
+<canvas id="line-info1" height="100%" width="100%"></canvas>
+
 </div>
 
 

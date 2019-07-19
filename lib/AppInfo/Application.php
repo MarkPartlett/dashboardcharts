@@ -34,6 +34,8 @@ use OCP\AppFramework\IAppContainer;
 use OCP\AppFramework\QueryException;
 
 
+
+
 class Application extends App {
 
 	const APP_NAME = 'dashboardcharts';
@@ -55,8 +57,13 @@ class Application extends App {
 	 */
 	public function registerServices() {
 		$container = $this->getContainer();
+		
 		/** @var IDashboardManager $dashboardManager */
 		$container->registerAlias('Settings', Settings::class);
 	}
 
 }
+
+
+
+

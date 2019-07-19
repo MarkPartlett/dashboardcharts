@@ -3,7 +3,7 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>dashboardcharts</id>
     <name>DashboardCharts</name>
-    <summary>Dashboard Gaphs/Gauges/Reports.</summary>
+    <summary>Dashboard Gaphs Gauges Reports.</summary>
     <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Gaphs/Gauges/Grid Reports.]]></description>
     <version>0.0.1</version>
     <licence>agpl</licence>
@@ -24,45 +24,6 @@
 		<widget>OCA\DashboardCharts\Widgets\HChart3Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\HChart4Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\HChart5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Chart1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Chart2Widget</widget>
-        <widget>OCA\DashboardCharts\Widgets\Chart3Widget</widget>
-        <widget>OCA\DashboardCharts\Widgets\Chart4Widget</widget>
-        <widget>OCA\DashboardCharts\Widgets\Chart5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Grid1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Grid2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Grid3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Grid4Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Grid5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge4Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge6Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge7Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge8Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Gauge9Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter4Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter6Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter7Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter8Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Counter9Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Info1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Info2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\Info3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME4Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME6Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME7Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME8Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\iFRAME9Widget</widget>
+		
 	</dashboard>
 </info>
