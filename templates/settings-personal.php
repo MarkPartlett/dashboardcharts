@@ -34,7 +34,7 @@ script('dashboardcharts', 'widgets/highcharts-more');
 script('dashboardcharts', 'widgets/highcharts-3d');
 script('dashboardcharts', 'widgets/data');
 script('dashboardcharts', 'widgets/funnel');
-script('dashboardcharts', 'widgets//solid-gauge');
+script('dashboardcharts', 'widgets/solid-gauge');
 script('dashboardcharts', 'widgets/accessibility');
 script('dashboardcharts', 'widgets/annotations');
 //script('dashboardcharts', 'widgets/highcharts-editor.thumbnails.min');
