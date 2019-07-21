@@ -85,20 +85,20 @@ $(document).ready(function() {
 		var selector = '#dashboard-message',
 			snippetValue = $textarea.val(),
 			urlValue = $urlInput.val();
-		$section.find('textarea').each(function(){
+			$section.find('textarea').each(function(){
 		$(this).prop('disabled', true);
 		});
 		OC.msg.startSaving(selector);
 		
 		var returnMsg = '[{';
 		$section.find('textarea').each(function(){
-		returnMsg += "\"widget\":\""+ $(this).attr('id')+"\",\"data\":"+$(this).attr('value')+"},{";
+		returnMsg += "\"widget\":\""+ $(this).attr('id')+"\",\"data\":"+ highed.dom.get(this).value +"},{";
 			});
 		returnMsg = returnMsg.substring(0, returnMsg.length - 3);
 		returnMsg += "}]";
 		
 		returnMsg = 'dashboard=' + returnMsg;
-	//	console.log(returnMsg);
+		console.log(returnMsg);
 		
 	//	function saveSettings() {
 	//	OC.msg.startSaving('#activity_notifications_msg');
