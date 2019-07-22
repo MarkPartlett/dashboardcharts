@@ -176,7 +176,7 @@ script('dashboardcharts', 'personal');
 					<input type="text" style="width:50%" id="dashboard-text<?php p(($data)['widget']) ?>_<?php p($activity)[0]['widget'] ?>" name="<?php p($activity) ?>_<?php p($activity) ?>"
 						disabled="disabled" value="<?php p(($data)['widget']) ?>" <?php p(($data)['widget']) ?> text" 
 						 />
-						 <button id="Edit-<?php p(($data)['widget']) ?>-button" class="highed-imp-button" ><?php p($l->t('Create A Report')); ?></button>
+						 <button id="Edit-<?php p(($data)['widget']) ?>-button" class="highed-imp-button" ><?php p($l->t('Create A Chart')); ?></button>
 												 						 						 
 					<label for="<?php p($activity) ?>_<?php p($activity) ?>">
 					<textarea style="height:100px;width:100%" id="<?php p(($data)['widget']) ?>" value="<?php p(($data)['data']); ?>"><?php print_unescaped(($data)['data']); ?> </textarea>
