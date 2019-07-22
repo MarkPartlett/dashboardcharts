@@ -47,6 +47,8 @@ script('dashboardcharts', 'widgets/data-gspreadsheets');
 script('dashboardcharts', 'widgets/data-socrata');
 script('dashboardcharts', 'widgets/export-beautified');
 script('dashboardcharts', 'widgets/jquery-2.2.4.min');
+script('dashboardcharts', 'widgets/codemirror.min');
+style('dashboardcharts', 'widgets/codemirror.min');
 script('dashboardcharts', 'personal');
 
 //script('dashboardcharts', 'widgets/highcharts-custom');
