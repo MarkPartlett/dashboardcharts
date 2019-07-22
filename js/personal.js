@@ -24,7 +24,7 @@
  */
  highed.setLang('en');
  	    highed.ready(function () {
-	//	html = 	highed.dom.get('HChart1').value;
+		html = 	highed.dom.get('HChart1').value;
 	//	highed.ModalEditor.editor.chart.options.setAll(html);
         highed.ModalEditor('Edit-HChart1-button', {
            // features: 'import templates',
@@ -204,7 +204,9 @@ $(document).ready(function() {
 	
 	});
 		*/
-	 
-	 
+	 $('#Export-HChart1-button').on('click', function(event) {
+		event.preventDefault();
+		window.open('data:text/json;charset=utf-8,' + escape($HChart1));
+	 });
 	
 });
