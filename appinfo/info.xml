@@ -3,16 +3,16 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>dashboardcharts</id>
     <name>DashboardCharts</name>
-    <summary>Dashboard Gaphs Gauges Reports.</summary>
-    <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Gaphs/Gauges/Grid Reports.]]></description>
+    <summary>Dashboard HighCharts Reports.</summary>
+    <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Highcharts.js Reports.]]></description>
     <version>0.0.1</version>
     <licence>agpl</licence>
     <author mail="mark@partlettconsulting.com.au" >Mark Partlett</author>
     <namespace>DashboardCharts</namespace>
     <category>tools</category>
-    <bugs>https://github.com/nextcloud/dashboardcharts/issues</bugs>
+    <bugs>https://github.com/markpartlett/dashboardcharts/issues</bugs>
     <dependencies>
-        <nextcloud min-version="15" max-version="17"/>
+        <nextcloud min-version="15" max-version="18"/>
     </dependencies>
 		<settings>
 		<personal>OCA\DashboardCharts\Settings\Personal</personal>
@@ -24,6 +24,5 @@
 		<widget>OCA\DashboardCharts\Widgets\HChart3Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\HChart4Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\HChart5Widget</widget>
-		
 	</dashboard>
 </info>

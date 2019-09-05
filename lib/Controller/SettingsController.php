@@ -69,6 +69,8 @@ class SettingsController extends Controller {
 		$userId = $this->userId;
 		$widgetId = trim(json_encode(($value)['widget']),'"');
 		$settings = json_encode(($value)['data']);
+	//	$settings = (($value)['data']);
+
 		$this->dataRequest->create($widgetId,  $userId,  $settings);
 		}
 		

@@ -37,7 +37,6 @@ script('dashboardcharts', 'widgets/funnel');
 script('dashboardcharts', 'widgets/solid-gauge');
 script('dashboardcharts', 'widgets/accessibility');
 script('dashboardcharts', 'widgets/annotations');
-//script('dashboardcharts', 'widgets/highcharts-editor.thumbnails.min');
 style('dashboardcharts', 'widgets/highcharts-editor.min');
 script('dashboardcharts', 'widgets/highcharts-editor');
 script('dashboardcharts', 'widgets/highcharts-editor.complete');
@@ -50,38 +49,6 @@ script('dashboardcharts', 'widgets/jquery-2.2.4.min');
 script('dashboardcharts', 'widgets/codemirror.min');
 style('dashboardcharts', 'widgets/codemirror.min');
 script('dashboardcharts', 'personal');
-
-//script('dashboardcharts', 'widgets/highcharts-custom');
-//script('dashboardcharts', 'widgets/highcharts');
-//script('dashboardcharts', 'widgets/highcharts-editor.complete');
-//script('dashboardcharts', 'widgets/map');
-//script('dashboardcharts', 'widgets/codemirror.min');
-//script('dashboardcharts', 'widgets/javascript.min');
-//script('dashboardcharts', 'widgets/highcharts-more');
-//script('dashboardcharts', 'widgets/highcharts-3d');
-//script('dashboardcharts', 'widgets/exporting');
-//script('dashboardcharts', 'widgets/funnel');
-//script('dashboardcharts', 'widgets/solid-gauge');
-//script('dashboardcharts', 'widgets/data');
-//script('dashboardcharts', 'widgets/highcharts-editor.thumbnails.min');
-//script('dashboardcharts', 'widgets/highcharts-editor.complete');
-//script('dashboardcharts', 'widgets/highcharts-editor.min');
-//script('dashboardcharts', 'widgets/highcharts-editor');
-//script('dashboardcharts', 'widgets/highcharts-editor.advanced.min');
-//script('dashboardcharts', 'widgets/highcharts-editor.thumbnails.min');
-//script('dashboardcharts', 'widgets/highcharts-editor.complete')
-//script('dashboardcharts', 'widgets/jquery-2.2.4.min');
-//script('dashboardcharts', 'widgets/data-csv');
-//script('dashboardcharts', 'widgets/data-difi');
-//script('dashboardcharts', 'widgets/data-gspreadsheets');
-//script('dashboardcharts', 'widgets/data-socrata');
-//script('dashboardcharts', 'widgets/export-beautified');
-//script('dashboardcharts', 'widgets/accessibility');
-//script('dashboardcharts', 'widgets/standalone-framework');
-//script('dashboardcharts', 'widgets/highstock');
-//style('dashboardcharts', 'widgets/codemirror.min');
-//style('dashboardcharts', 'widgets/neo.min');
-
 
 ?>
  
@@ -169,6 +136,7 @@ script('dashboardcharts', 'personal');
 		<?php p($l->t('Dashboard Widget Settings')); ?>
 		<button id="dashboard-save" class="btn btn-primary" ><?php p($l->t('Update Dashboard')); ?></button>
 		
+		<h1 class="inlineblock"><?php p($l->t('Dashboard Metadata :')); ?></h1>
 		
 	</p>
 	    <?php foreach ($_['widgets'] as $activity => $data): ?>
