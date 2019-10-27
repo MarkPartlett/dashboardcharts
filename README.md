@@ -10,8 +10,6 @@ Alpha version only
 Here are links to a few of the popular libraries:
 
 		Highcharts - http://www.highcharts.com
-		
-		(I've currently disabled the following components)
 		Chart.js -  http://www.chartjs.org 
 		Gauge.js -  https://github.com/bernii/gauge.js 
 		DataTables -  https://datatables.net
