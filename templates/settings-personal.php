@@ -131,33 +131,40 @@ script('dashboardcharts', 'personal');
 	<body>
 
 <div id="dashboard-section" class="section" data-cachebuster="<?php print_unescaped($_['cachebuster']); ?>">
-	<h2 class="inlineblock"><?php p($l->t('Dashboard Charts App')); ?></h2>
+	<h2 class="inlineblock"><?php p($l->t('Dashboard Charts')); ?></h2>
 	<p>
-		<?php p($l->t('Dashboard Widget Settings')); ?>
-		<button id="dashboard-save" class="btn btn-primary" ><?php p($l->t('Update Dashboard')); ?></button>
+		<?php p($l->t('Widget Settings')); ?>
+		<button id="dashboard-save" class="btn btn-primary" ><?php p($l->t('Save')); ?></button>
 		
-		<h1 class="inlineblock"><?php p($l->t('Dashboard Metadata :')); ?></h1>
+		<h1 class="inlineblock"><?php p($l->t('Chart Component :')); ?></h1>
+		
+		<button id="dashboard-down" class="btn btn-primary" ><?php p($l->t(' - ')); ?></button>
+		<button id="dashboard-up" class="btn btn-primary" ><?php p($l->t(' + ')); ?></button>
 		
 	</p>
 	    <?php foreach ($_['widgets'] as $activity => $data): ?>
+			<div id="settings-<?php p(($data)['widget']) ?>" class="targetDiv" hidden>
 			<tr>
+				
 				<td class="small">
 				
-					<input type="text" style="width:50%" id="dashboard-text<?php p(($data)['widget']) ?>_<?php p($activity)[0]['widget'] ?>" name="<?php p($activity) ?>_<?php p($activity) ?>"
-						disabled="disabled" value="<?php p(($data)['widget']) ?>" <?php p(($data)['widget']) ?> text" 
-						 />
-						 <button id="Edit-<?php p(($data)['widget']) ?>-button" class="highed-imp-button" ><?php p($l->t('Create A Chart')); ?></button>
+					<h1 class="inlineblock"><?php p(($data)['widget']) ?><h1>
+					
+						 <button id="Edit-<?php p(($data)['widget']) ?>-button" hidden class="highed-imp-button" ><?php p($l->t('Create A Chart')); ?></button>
 												 						 						 
 					<label for="<?php p($activity) ?>_<?php p($activity) ?>">
-					<textarea style="height:100px;width:100%" id="<?php p(($data)['widget']) ?>" value="<?php p(($data)['data']); ?>"><?php print_unescaped(($data)['data']); ?> </textarea>
+					<textarea style="height:200px;width:100%" id="<?php p(($data)['widget']) ?>" value="<?php p(($data)['data']); ?>"><?php print_unescaped(($data)['data']); ?> </textarea>
 					</label>
 				</td>
 			</tr>
+			</div>
 		<?php endforeach; ?>
 		</tbody>
 	</table>
 	
 <button id="dashboard-load" class="btn btn-primary" ><?php p($l->t('Load Demo Dashboard')); ?></button>
+
+
 
 </div>
 

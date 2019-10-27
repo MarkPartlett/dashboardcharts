@@ -76,7 +76,7 @@ class Info1Widget implements IDashboardWidget {
 	 */
 	public function getDescription(): string {
 		return 'Info Block'
-			   . '..Display a HTML info/help/support statement';
+			   . '..Display a HTML info\help\support statement';
 	}
 
 
@@ -85,13 +85,9 @@ class Info1Widget implements IDashboardWidget {
 	 */
 	public function getWidgetTemplate(): WidgetTemplate {
 		$template = new WidgetTemplate();
-		$template->addCss('highcharts-editor.min')
+		$template->addCss('widgets/info1')
 				 ->addJs('widgets/Info1')
-				 ->addJs('widgets/highcharts')
-				 ->addJs('widgets/highcharts-more')
-				 ->addJs('widgets/highcharts-3d')
-				 ->addJs('widgets/exporting')
-                 ->addJs('widgets/counter.min')
+          //       ->addJs('widgets/counter.min')
 				 ->setIcon('icon-chart')
 				 ->setContent('widgets/Info1')
                  ->setInitFunction('OCA.DashBoard.info1.init');	

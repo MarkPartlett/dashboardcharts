@@ -76,7 +76,7 @@ class Info2Widget implements IDashboardWidget {
 	 */
 	public function getDescription(): string {
 		return 'Info Block'
-			   . '..Display a HTML info/help/support statement';
+			   . '..Display a HTML info\help\support statement';
 	}
 
 

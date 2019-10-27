@@ -87,8 +87,11 @@ class iFRAME1Widget implements IDashboardWidget {
 	public function getWidgetTemplate(): WidgetTemplate {
 		$template = new WidgetTemplate();
 		$template->addCss('widgets/iframe1')
+		         ->addCss('widgets/font-awesome.min')
+		         ->addCss('widgets/bootstrap.min')
+		         ->addCss('widgets/formio.full.min')
 				 ->addJs('widgets/iFRAME1')
-        //         ->addJs('widgets/counter.min')
+				 ->addJs('widgets/formio.full.min')
 				 ->setIcon('icon-chart')
 				 ->setContent('widgets/iFRAME1')
                  ->setInitFunction('OCA.DashBoard.iframe1.init')
@@ -103,7 +106,7 @@ class iFRAME1Widget implements IDashboardWidget {
 	public function getWidgetSetup(): WidgetSetup {
 		$setup = new WidgetSetup();
 		$setup->addSize(WidgetSetup::SIZE_TYPE_MIN, 2, 2)
-			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 8)
+			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 15, 15)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
 		$setup->addMenuEntry('OCA.DashBoard.iframe1.getiFRAME1Data', 'icon-chart', 'Refresh');

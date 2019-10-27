@@ -44,11 +44,11 @@
 				   
          
       
-       var editor = highed.Editor("app-content");
+ 
   
 				
-			//		   info1.divInfo1 = $('#widget-info1');
-			//		   info1.getInfo1Data();
+					   info1.divInfo1 = $('#widget-info1');
+					   info1.getInfo1Data();
 					      },
 
   			getInfo1Data: function () {
@@ -70,6 +70,7 @@
 														
 					var info1data = result.value.info1;
 								
+					$('#widget-header-name').text(info1data);						  
 				info1.renderCounter(JSON.parse(info1data));
 					
 					
@@ -77,8 +78,8 @@
 					
 			renderCounter: function(counterdata) {
 				
-				//    $('#line-info1').remove();
-				//	$('#widget-info1').append('<canvas id="line-info1" height="80%"></canvas>');
+				    $('#line-info1').remove();
+				$('#widget-info1').append('<canvas id="line-info1" height="80%"></canvas>');
 
 					info1.divInfo1.fadeOut(150, function () {
 						$(this).html(counterdata.text).fadeIn(150);
@@ -91,8 +92,11 @@
 					return;
 				}
 				
-			
-		//	$('#widget-header-name').text(info1data);
+				info1.divInfo1.fadeOut(150, function () {
+						$(this).html(info1data).fadeIn(150);
+						
+					});
+			$('#widget-header-name').text(info1data);
 				info1.renderCounter(JSON.parse(info1data));
 			}
 
