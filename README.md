@@ -9,6 +9,7 @@ Alpha version only
 
 Here are links to a few of the popular libraries:
 
+                Form.io - https://www.form.io/
 		Highcharts - http://www.highcharts.com
 		Chart.js -  http://www.chartjs.org 
 		Gauge.js -  https://github.com/bernii/gauge.js 
