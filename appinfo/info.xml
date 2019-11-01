@@ -3,14 +3,18 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>dashboardcharts</id>
     <name>DashboardCharts</name>
-    <summary>Dashboard HighCharts Reports.</summary>
-    <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Highcharts.js Reports.]]></description>
-    <version>0.0.1</version>
+    <summary>Flexible Dashboard Charts</summary>
+    <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6.]]></description>
+    <version>0.1.2</version>
     <licence>agpl</licence>
     <author mail="mark@partlettconsulting.com.au" >Mark Partlett</author>
     <namespace>DashboardCharts</namespace>
     <category>tools</category>
-    <bugs>https://github.com/markpartlett/dashboardcharts/issues</bugs>
+	<website>https://github.com/markpartlett/dashboardcharts</website>
+	<bugs>https://github.com/markpartlett/dashboardcharts/issues</bugs>
+	<repository type="git">https://github.com/MarkPartlett/dashboardcharts.git</repository>
+	<screenshot>https://raw.githubusercontent.com/MarkPartlett/dashboardcharts/master/img/Capture_DCv2.PNG</screenshot>
+	<screenshot>https://raw.githubusercontent.com/MarkPartlett/dashboardcharts/master/img/Capture_DCv2_settings.PNG</screenshot>
     <dependencies>
         <nextcloud min-version="15" max-version="18"/>
     </dependencies>

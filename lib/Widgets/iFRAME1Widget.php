@@ -87,11 +87,7 @@ class iFRAME1Widget implements IDashboardWidget {
 	public function getWidgetTemplate(): WidgetTemplate {
 		$template = new WidgetTemplate();
 		$template->addCss('widgets/iframe1')
-		         ->addCss('widgets/font-awesome.min')
-		         ->addCss('widgets/bootstrap.min')
-		         ->addCss('widgets/formio.full.min')
 				 ->addJs('widgets/iFRAME1')
-				 ->addJs('widgets/formio.full.min')
 				 ->setIcon('icon-chart')
 				 ->setContent('widgets/iFRAME1')
                  ->setInitFunction('OCA.DashBoard.iframe1.init')
