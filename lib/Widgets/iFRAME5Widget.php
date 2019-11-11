@@ -87,7 +87,7 @@ class iFRAME5Widget implements IDashboardWidget {
 		$template->addCss('widgets/iframe5')
 				 ->addJs('widgets/iFRAME5')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-iframe')
 				 ->setContent('widgets/iFRAME5')
                  ->setInitFunction('OCA.DashBoard.iframe5.init');	
 
@@ -105,7 +105,7 @@ class iFRAME5Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 8)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.iframe5.getiFRAME5Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.iframe5.getiFRAME5Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.iframe5.getiFRAME5Data', 300);
 		$setup->setPush('OCA.DashBoard.iframe5.push');
 

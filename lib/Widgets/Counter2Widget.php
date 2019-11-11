@@ -88,7 +88,7 @@ class Counter2Widget implements IDashboardWidget {
 		$template->addCss('widgets/counter2')
 				 ->addJs('widgets/Counter2')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-counter')
 				 ->setContent('widgets/Counter2')
                  ->setInitFunction('OCA.DashBoard.counter2.init');	
 
@@ -106,7 +106,7 @@ class Counter2Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 2, 2)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 1, 1);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.counter2.getCounter2Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.counter2.getCounter2Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.counter2.getCounter2Data', 300);
 		$setup->setPush('OCA.DashBoard.counter2.push');
 

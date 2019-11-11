@@ -88,7 +88,7 @@ class Grid4Widget implements IDashboardWidget {
 		$template->addCss('widgets/grid4')
 				 ->addJs('widgets/Grid4')
                  ->addJs('widgets/datatables')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-grid')
 				 ->setContent('widgets/Grid4')
                  ->setInitFunction('OCA.DashBoard.grid4.init');	
 
@@ -106,7 +106,7 @@ class Grid4Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 24)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 6);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.grid4.getGrid4Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.grid4.getGrid4Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.grid4.getGrid4Data', 300);
 		$setup->setPush('OCA.DashBoard.grid4.push');
 

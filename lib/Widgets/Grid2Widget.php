@@ -88,7 +88,7 @@ class Grid2Widget implements IDashboardWidget {
 		$template->addCss('widgets/grid2')
 				 ->addJs('widgets/Grid2')
         //         ->addJs('widgets/datatables')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-grid')
 				 ->setContent('widgets/Grid2')
                  ->setInitFunction('OCA.DashBoard.grid2.init');	
 
@@ -106,7 +106,7 @@ class Grid2Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 24)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 6);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.grid2.getGrid2Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.grid2.getGrid2Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.grid2.getGrid2Data', 300);
 		$setup->setPush('OCA.DashBoard.grid2.push');
 

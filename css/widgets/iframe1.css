@@ -23,15 +23,15 @@
  *
  */
 
-.icon-chart {
-	background-image: url('../../img/widgets/chart.svg');
+.icon-iframe {
+	background-image: url('../../img/widgets/iframe.svg');
 }
 
-.icon-chart-white {
-	background-image: url('../../img/widgets/chart-white.svg');
+.icon-iframe-white {
+	background-image: url('../../img/widgets/iframe-white.svg');
 }
 
-.widget-info1  {
+.widget-iframe1  {
 	font-size: 11px;
 	padding: 30px 30px 0px;
 	letter-spacing: 1.5px;

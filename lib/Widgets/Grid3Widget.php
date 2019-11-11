@@ -88,7 +88,7 @@ class Grid3Widget implements IDashboardWidget {
 		$template->addCss('widgets/grid3')
 				 ->addJs('widgets/Grid3')
            //      ->addJs('widgets/datatables')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-grid')
 				 ->setContent('widgets/Grid3')
                  ->setInitFunction('OCA.DashBoard.grid3.init');	
 
@@ -106,7 +106,7 @@ class Grid3Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 24)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 6);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.grid3.getGrid3Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.grid3.getGrid3Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.grid3.getGrid3Data', 300);
 		$setup->setPush('OCA.DashBoard.grid3.push');
 

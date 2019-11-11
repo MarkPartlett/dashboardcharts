@@ -88,7 +88,7 @@ class Counter9Widget implements IDashboardWidget {
 		$template->addCss('widgets/counter9')
 				 ->addJs('widgets/Counter9')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-counter')
 				 ->setContent('widgets/Counter9')
                  ->setInitFunction('OCA.DashBoard.counter9.init');	
 
@@ -106,7 +106,7 @@ class Counter9Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 2, 2)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 1, 1);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.counter9.getCounter9Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.counter9.getCounter9Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.counter9.getCounter9Data', 300);
 		$setup->setPush('OCA.DashBoard.counter9.push');
 

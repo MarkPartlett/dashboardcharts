@@ -107,7 +107,7 @@ class Chart3Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 6, 6)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 3, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.charts3.getChart3Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.charts3.getChart3Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.charts3.getChart3Data', 300);
 		$setup->setPush('OCA.DashBoard.charts3.push');
 

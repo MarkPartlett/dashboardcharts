@@ -23,12 +23,12 @@
  *
  */
 
-.icon-chart {
-	background-image: url('../../img/widgets/chart.svg');
+.icon-info {
+	background-image: url('../../img/widgets/info.svg');
 }
 
-.icon-chart-white {
-	background-image: url('../../img/widgets/chart-white.svg');
+.icon-info-white {
+	background-image: url('../../img/widgets/info-white.svg');
 }
 
 .widget-info1  {

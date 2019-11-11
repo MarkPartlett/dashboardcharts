@@ -88,10 +88,10 @@ class iFRAME1Widget implements IDashboardWidget {
 		$template = new WidgetTemplate();
 		$template->addCss('widgets/iframe1')
 				 ->addJs('widgets/iFRAME1')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-iframe')
 				 ->setContent('widgets/iFRAME1')
-                 ->setInitFunction('OCA.DashBoard.iframe1.init')
-				 ->setSettings(['name','title','checkbox',true,'placeholder'],['name2','title2','checkbox2',true,'placeholder2']);      	 
+                 ->setInitFunction('OCA.DashBoard.iframe1.init');
+			//	 ->setSettings(['name','title','checkbox',true,'placeholder'],['name2','title2','checkbox2',true,'placeholder2']);      	 
 		return $template;
 	}
 
@@ -105,7 +105,7 @@ class iFRAME1Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 15, 15)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.iframe1.getiFRAME1Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.iframe1.getiFRAME1Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.iframe1.getiFRAME1Data', 300);
 		$setup->setPush('OCA.DashBoard.iframe1.push');
 

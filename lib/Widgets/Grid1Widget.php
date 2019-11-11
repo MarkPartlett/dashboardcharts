@@ -88,7 +88,7 @@ class Grid1Widget implements IDashboardWidget {
 		$template->addCss('widgets/grid1')
 				 ->addJs('widgets/Grid1')
                  ->addJs('widgets/datatables')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-grid')
 				 ->setContent('widgets/Grid1')
                  ->setInitFunction('OCA.DashBoard.grid1.init');	
 

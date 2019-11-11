@@ -22,15 +22,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-.icon-chart {
-	background-image: url('../../img/widgets/chart.svg');
+.icon-grid {
+	background-image: url('../../img/widgets/grid.svg');
 }
 
-.icon-chart-white {
-	background-image: url('../../img/widgets/chart-white.svg');
+.icon-grid-white {
+	background-image: url('../../img/widgets/grid-white.svg');
 }
 
 .widget-test1 {
 	padding: 10px;
+}
+
+.icon-refresh {
+	background-image: url('../../img/widgets/refresh.svg');
 }
 

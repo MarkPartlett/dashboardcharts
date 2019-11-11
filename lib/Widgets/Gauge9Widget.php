@@ -88,7 +88,7 @@ class Gauge9Widget implements IDashboardWidget {
 		$template->addCss('widgets/gauge9')
 				 ->addJs('widgets/Gauge9')
        //          ->addJs('widgets/gauge.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-gauge')
 				 ->setContent('widgets/Gauge9')
                  ->setInitFunction('OCA.DashBoard.gauge9.init');	
 
@@ -106,7 +106,7 @@ class Gauge9Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 3, 3)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 2, 2);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.gauge9.getGauge9Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.gauge9.getGauge9Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.gauge9.getGauge9Data', 300);
 		$setup->setPush('OCA.DashBoard.gauge9.push');
 

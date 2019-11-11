@@ -34,3 +34,7 @@
 	padding: 10px;
 }
 
+.icon-refresh {
+	background-image: url('../../img/widgets/refresh.svg');
+}
+

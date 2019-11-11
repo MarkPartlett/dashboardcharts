@@ -23,17 +23,18 @@
  *
  */
 
-.icon-chart {
-	background-image: url('../../img/widgets/chart.svg');
+.icon-gauge {
+	background-image: url('../../img/widgets/gauge-dark.svg');
 }
 
-.icon-chart-white {
-	background-image: url('../../img/widgets/chart-white.svg');
+.icon-gauge-white {
+	background-image: url('../../img/widgets/gauge.svg');
 }
 
 .widget-gauge3 {
 	padding: 10px;
 }
 
-
-
+.icon-refresh {
+	background-image: url('../../img/widgets/refresh.svg');
+}

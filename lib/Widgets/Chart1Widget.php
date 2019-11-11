@@ -106,7 +106,7 @@ class Chart1Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 6, 6)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 3, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.charts1.getChart1Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.charts1.getChart1Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.charts1.getChart1Data', 300);
 		$setup->setPush('OCA.DashBoard.charts1.push');
 

@@ -76,7 +76,7 @@ class Info2Widget implements IDashboardWidget {
 	 */
 	public function getDescription(): string {
 		return 'Info Block'
-			   . '..Display a HTML info\help\support statement';
+			   . '..Display a HTML info/help/support statement';
 	}
 
 
@@ -88,7 +88,7 @@ class Info2Widget implements IDashboardWidget {
 		$template->addCss('widgets/info2')
 				 ->addJs('widgets/Info2')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-info')
 				 ->setContent('widgets/Info2')
                  ->setInitFunction('OCA.DashBoard.info2.init');	
 
@@ -106,7 +106,7 @@ class Info2Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 8)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.info2.getInfo2Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.info2.getInfo2Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.info2.getInfo2Data', 300);
 		$setup->setPush('OCA.DashBoard.info2.push');
 

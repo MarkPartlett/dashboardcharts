@@ -24,15 +24,19 @@
  */
 
 
-.icon-chart {
-	background-image: url('../../img/widgets/chart.svg');
+.icon-hchart {
+	background-image: url('../../img/widgets/hchart.svg');
 }
 
-.icon-chart-white {
-	background-image: url('../../img/widgets/chart-white.svg');
+.icon-hchart-white {
+	background-image: url('../../img/widgets/hchart-white.svg');
 }
 
 .widget-hchart4 {
 	padding: 10px;
+}
+
+.icon-refresh {
+	background-image: url('../../img/widgets/refresh.svg');
 }
 

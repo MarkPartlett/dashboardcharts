@@ -92,7 +92,7 @@ class HChart1Widget implements IDashboardWidget {
 				 ->addJs('widgets/highcharts-3d')
 				 ->addJs('widgets/data')
 				 ->addJs('widgets/exporting')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-hchart')
 				 ->setContent('widgets/HChart1')
                  ->setInitFunction('OCA.DashBoard.hchart1.init');	
 
@@ -110,7 +110,7 @@ class HChart1Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 6, 12)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 3, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.hchart1.getHChart1Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.hchart1.getHChart1Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.hchart1.getHChart1Data', 300);
 		$setup->setPush('OCA.DashBoard.hchart1.push');
 

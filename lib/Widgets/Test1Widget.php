@@ -2,13 +2,13 @@
 
 
 /**
- * Nextcloud - Dashboard app
+ * Nextcloud - Dashboard Charting app
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
  *
- * @author Maxence Lange <maxence@artificial-owl.com>
- * @copyright 2018, Maxence Lange <maxence@artificial-owl.com>
+ * @author Mark Partlett <mark@partlettconsulting.com.au>
+ * @copyright 2019, Mark Partlett <mark@partlettconsulting.com.au>
  * @license GNU AGPL version 3 or any later version
  *
  * This program is free software: you can redistribute it and/or modify
@@ -106,7 +106,7 @@ class Test1Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 8)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.test1.getTest1Data', 'icon-chart', 'New Data');
+		$setup->addMenuEntry('OCA.DashBoard.test1.getTest1Data', 'icon-refresh', 'New Data');
 		$setup->addDelayedJob('OCA.DashBoard.test1.getTest1Data', 60);
 		$setup->setPush('OCA.DashBoard.test1.push');
 

@@ -87,7 +87,7 @@ class Grid5Widget implements IDashboardWidget {
 		$template->addCss('widgets/grid5')
 				 ->addJs('widgets/Grid5')
                  ->addJs('widgets/datatables')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-grid')
 				 ->setContent('widgets/Grid5')
                  ->setInitFunction('OCA.DashBoard.grid5.init');	
 
@@ -105,7 +105,7 @@ class Grid5Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 24)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 6);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.grid5.getGrid5Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.grid5.getGrid5Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.grid5.getGrid5Data', 300);
 		$setup->setPush('OCA.DashBoard.grid5.push');
 

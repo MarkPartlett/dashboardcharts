@@ -88,7 +88,7 @@ class iFRAME4Widget implements IDashboardWidget {
 		$template->addCss('widgets/iframe4')
 				 ->addJs('widgets/iFRAME4')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-iframe')
 				 ->setContent('widgets/iFRAME4')
                  ->setInitFunction('OCA.DashBoard.iframe4.init');	
 
@@ -106,7 +106,7 @@ class iFRAME4Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 8, 8)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 4, 4);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.iframe4.getiFRAME4Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.iframe4.getiFRAME4Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.iframe4.getiFRAME4Data', 300);
 		$setup->setPush('OCA.DashBoard.iframe4.push');
 

@@ -88,7 +88,7 @@ class Counter3Widget implements IDashboardWidget {
 		$template->addCss('widgets/counter3')
 				 ->addJs('widgets/Counter3')
         //         ->addJs('widgets/counter.min')
-				 ->setIcon('icon-chart')
+				 ->setIcon('icon-counter')
 				 ->setContent('widgets/Counter3')
                  ->setInitFunction('OCA.DashBoard.counter3.init');	
 
@@ -106,7 +106,7 @@ class Counter3Widget implements IDashboardWidget {
 			  ->addSize(WidgetSetup::SIZE_TYPE_MAX, 2, 2)
 			  ->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 1, 1);
 			  
-		$setup->addMenuEntry('OCA.DashBoard.counter3.getCounter3Data', 'icon-chart', 'Refresh');
+		$setup->addMenuEntry('OCA.DashBoard.counter3.getCounter3Data', 'icon-refresh', 'Refresh');
 		$setup->addDelayedJob('OCA.DashBoard.counter3.getCounter3Data', 300);
 		$setup->setPush('OCA.DashBoard.counter3.push');
 
