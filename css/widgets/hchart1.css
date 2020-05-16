@@ -39,4 +39,10 @@
 .icon-refresh {
 	background-image: url('../../img/widgets/refresh.svg');
 }
+.h2, h2 {
++ font-size: 15px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+- margin-top: 0px;
+}
 

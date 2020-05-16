@@ -18,7 +18,7 @@
 	<screenshot>https://raw.githubusercontent.com/MarkPartlett/dashboardcharts/master/img/Capture_DCv2.PNG</screenshot>
 	<screenshot>https://raw.githubusercontent.com/MarkPartlett/dashboardcharts/master/img/Capture_DCv2_settings.PNG</screenshot>
     <dependencies>
-        <nextcloud min-version="15" max-version="18"/>
+        <nextcloud min-version="15" max-version="20"/>
     </dependencies>
 		<settings>
 		<personal>OCA\DashboardCharts\Settings\Personal</personal>
@@ -30,11 +30,6 @@
 		<widget>OCA\DashboardCharts\Widgets\Formio3Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\Formio4Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\Formio5Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\HChart1Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\HChart2Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\HChart3Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\HChart4Widget</widget>
-		<widget>OCA\DashboardCharts\Widgets\HChart5Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\Chart1Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\Chart2Widget</widget>
 		<widget>OCA\DashboardCharts\Widgets\Chart3Widget</widget>

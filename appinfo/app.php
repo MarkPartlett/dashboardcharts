@@ -30,8 +30,14 @@
 
 namespace OCA\DashboardCharts\AppInfo;
 
+use OC\Security\CSP\ContentSecurityPolicy;
 
 
+$cspManager = \OC::$server->getContentSecurityPolicyManager();
+$csp = new ContentSecurityPolicy();
+$csp->addAllowedChildSrcDomain("'self'");
+$csp->addAllowedFrameDomain("data:");
+$cspManager->addDefaultPolicy($csp);
 $app = new Application();
 $app->registerServices();
 

@@ -56,8 +56,29 @@ class DataMapper extends Mapper {
                 if ($row = $result->fetch()) {
                         return $row["data"];
                 }
+				
+		public function setTransform ($widgetName, $userId, $sourceValue, $transformValue) {
+                $sql = "DELETE FROM *PREFIX*dashboard_datasource  WHERE `user_id` = '" . $userId . "' and `widget` = '" . $widgetName . "'";
+                $this->db->executequery($sql);
+
+                $sql = "INSERT INTO *PREFIX*dashboard_datasource (`user_id`,`widget`,`source`,`transform`) VALUES ('" . $userId . "','" . $widgetName . "','" . $sourceValue . "','" . $transformValue . "')";
+                $this->db->executequery($sql);
+        }	
+	    public function getTransform ($userId, $widgetName) {
+                $sql = "SELECT transform FROM *PREFIX*dashboard_datasource WHERE `user_id` ='" . $userId . "' and `widget` ='" . $widgetName . "'";
+                $result = $this->db->executeQuery($sql);
+
+                if ($row = $result->fetch()) {
+                        return $row["transform"];
+                }
+	    public function getSource ($userId, $widgetName) {
+                $sql = "SELECT source FROM *PREFIX*dashboard_datasource WHERE `user_id` ='" . $userId . "' and `widget` ='" . $widgetName . "'";
+                $result = $this->db->executeQuery($sql);
+
+                if ($row = $result->fetch()) {
+                        return $row["source"];
+                }				
                 return 0;
         }
-
 };
 ?>

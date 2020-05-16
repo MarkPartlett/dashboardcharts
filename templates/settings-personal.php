@@ -188,7 +188,7 @@ function prettyPrint( $json )
 	<body>
 
 <div id="dashboard-section" class="section" data-cachebuster="<?php print_unescaped($_['cachebuster']); ?>">
-	<h2 class="inlineblock"><?php p($l->t('Dashboard Charts')); ?></h2>
+	<h2 class="inlineblock"><?php p($l->t('Dashboard Charts Widgets')); ?></h2>
 	<p>
 		<?php p($l->t('Widget Settings')); ?>
 		<button id="dashboard-save" class="btn btn-primary" ><?php p($l->t('Save')); ?></button>
@@ -205,13 +205,18 @@ function prettyPrint( $json )
 				
 				<td class="small">
 				
-					<h1 class="inlineblock"><?php p(($data)['widget']) ?><h1>
+					<h1 class="inlineblock"><?php p(($data)['widget']) ?> MetaData:<h1>
 					
 						 
 												 						 						 
 					<label for="<?php p($activity) ?>_<?php p($activity) ?>">
 					<textarea style="height:400px;width:100%" id="<?php p(($data)['widget']) ?>" value="<?php p(($data)['data']); ?>"><?php p(prettyPrint(($data)['data'])); ?> </textarea>
+					<h1 class="inlineblock"><?php p(($data)['widget']) ?> Data Source URL:<h1>
+					<textarea style="height:10px;width:100%" id="<?php p(($data)['widget']) ?>url" value="" >  </textarea>
+					<h1 class="inlineblock"><?php p(($data)['widget']) ?> Data Templating Schema:<h1>
+					<textarea style="height:400px;width:100%" id="<?php p(($data)['widget']) ?>template" value="" > </textarea>
 					</label>
+					
 				</td>
 				<button id="Edit-<?php p(($data)['widget']) ?>-button" hidden class="highed-imp-button" ><?php p($l->t('Create A Chart')); ?></button>
 			</tr>

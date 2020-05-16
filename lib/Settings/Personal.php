@@ -78,17 +78,17 @@ class Personal implements ISettings {
 
 		$response = new TemplateResponse('dashboardcharts', 'settings-personal', $parameters, '');
 		$policy = new ContentSecurityPolicy();
-		$policy->addAllowedImageDomain('*');
-		$policy->addAllowedFontDomain('*');
-		$policy->addAllowedObjectDomain('*');
-		$policy->addAllowedStyleDomain('*');
-        $policy->addAllowedMediaDomain('*');
-		$policy->addAllowedScriptDomain('*');
-		$policy->addAllowedChildSrcDomain('*');
-		$policy->addAllowedConnectDomain('*');
-		$policy->addAllowedFrameDomain('*');
-		$policy->addAllowedWorkerSrcDomain('*');
-		$policy->addAllowedFrameAncestorDomain('*'); 
+		$policy->addAllowedImageDomain("*");
+		$policy->addAllowedFontDomain("*");
+		$policy->addAllowedObjectDomain("*");
+		$policy->addAllowedStyleDomain("*");
+        $policy->addAllowedMediaDomain("*");
+		$policy->addAllowedScriptDomain("*");
+		$policy->addAllowedChildSrcDomain("*");
+		$policy->addAllowedConnectDomain("*");
+		$policy->addAllowedFrameDomain("*");
+		$policy->addAllowedWorkerSrcDomain("*");
+		$policy->addAllowedFrameAncestorDomain("*"); 
 		$response->setContentSecurityPolicy($policy); 
 		return $response;
 	}
