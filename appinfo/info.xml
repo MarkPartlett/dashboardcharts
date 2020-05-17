@@ -2,10 +2,10 @@
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>dashboardcharts</id>
-    <name>DashboardCharts</name>
+    <name>Dashboard Charts</name>
     <summary>Flexible Dashboard Charts</summary>
     <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6.]]></description>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <licence>agpl</licence>
     <author mail="mark@partlettconsulting.com.au" >Mark Partlett</author>
     <namespace>DashboardCharts</namespace>

@@ -39,4 +39,6 @@
 .icon-refresh {
 	background-image: url('../../img/widgets/refresh.svg');
 }
-
+.widget-header-name {
+	font-size: 20px;
+}
